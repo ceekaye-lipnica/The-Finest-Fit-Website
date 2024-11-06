@@ -638,5 +638,288 @@ padding: 1rem 1.5rem;
 
 /* ===== BLOG SECTION ===== */
 .blog{
-    padding: 3rem 0;
+    padding: 8rem 0;
+}
+
+.blog-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blog-top-text{
+    width: 40rem;
+}
+
+.blog-top-text h3{
+    color: var(--dark);
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 2rem;
+}
+
+.blog-top-text p{
+    color: var(--dark);
+    font-size: 1.7rem;
+}
+
+.blog-top-img img{
+    width: 60rem;
+}
+
+.blog-bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-top: 8rem;
+}
+
+.blog-cards{
+    padding: 3rem;
+    width: 30rem;
+    height: 65rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 15px;
+}
+
+.blog-cards img{
+    width: 25rem;
+}
+
+.blog-cards-title{
+    margin-top: 2rem;
+}
+
+.blog-cards-title h5{
+    color: grey;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.blog-cards-title h4{
+    color: var(--dark);
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.blog-cards p{
+    color: var(--dark);
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    text-align: justify;
+}
+
+
+/* ===== CONTACT SECTION ===== */
+.contact{
+    padding: 5rem 0;
+}
+
+.contact-wrapper{
+    display: flex;
+    justify-content: space-between;
+    gap: 10rem;
+
+}
+
+.contact-details{
+    width: 70rem;
+}
+
+.contact-details h3{
+    color: var(--dark);
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.contact-details p{
+    color: var(--dark);
+    font-size: 1.6rem;
+}
+
+.contact-form{
+    width: 100%;
+}
+
+.form-group label{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.form-group label span{
+    color: red;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.name-fields {
+    display: flex;
+    gap: 10px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.submitBtn{
+    width: 15rem;
+    text-align: center;
+}
+
+
+
+/* ===== LINKS SECTION ===== */
+.links{
+    padding-top: 3rem;
+
+    background-image: url('./img/links-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.links::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:  rgba(0, 0, 0, 0.95);
+    z-index: 1;
+}
+
+.links-wrapper{
+    position: relative;
+    z-index: 2;
+}
+
+.links-top{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.links-top img{
+    width: 45rem;
+}
+
+.links-top p{
+    color: var(--light);
+    font-size: 1.6rem;
+    text-align: justify;
+    width: 60rem;
+}
+
+.links-bottom{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 10rem;
+    margin-top: 5rem;
+}
+
+.links-1{
+    width: 25rem;
+}
+
+.links-2{
+    width: 30rem;
+}
+
+.links-1 h3{
+    color: var(--light);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+}
+
+.links-1 ul li a{
+    color: var(--light);
+    font-size: 1.7rem;
+}
+
+.links-1 ul li{
+    margin-bottom: 1rem;
+}
+
+.links-2 h3{
+    color: var(--light);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+}
+
+.links-2 ul li a{
+    color: var(--light);
+    font-size: 2rem;
+}
+
+.links-2 ul li{
+    margin-bottom: 1rem;
+}
+
+.links-2 ul{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.links-2 h5{
+    color: var(--light);
+    font-size: 1.5rem;
+    width: 25rem;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+    border-top: 1px solid var(--light);
+    margin-top: 5rem;
+}
+
+.footer p{
+    color: var(--light);
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.footer ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.footer ul li{
+    color: var(--light);
+    font-size: 1.5rem;
+    font-style: italic;
 }
