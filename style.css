@@ -283,6 +283,119 @@ padding: 1rem 1.5rem;
     margin-bottom: -1.5rem;
 }
 
+.toggle__menu{
+    display: none;
+}
+
+@media screen and (max-width: 500px){
+    .bannerBtn{
+        display: none;
+    }
+
+    .banner-header-nav{
+        background: var(--light);
+        position: absolute;
+        top: 10rem;
+        overflow: hidden;
+        max-height: 0;
+        right: 0;
+        width: 100%;
+        transition: .5s ease;
+        z-index: 9;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 3rem;
+    }
+    
+    .banner-header-nav.open{
+        max-height: 50rem;
+        transition: .5s ease;
+    }
+    
+    .header-logo img{
+        width: 25rem;
+    }
+    
+    .header-nav li a{
+        color: var(--dark);
+        font-size:  1.8rem;
+    }
+    
+    .header-nav li:first-child{
+        margin-top: 3rem;
+        
+    }
+    
+    .header-nav li:last-child{
+        margin-bottom: 3rem;
+        
+    }
+    
+    .toggle__menu span{
+        width: 3rem;
+        height: .3rem;
+        display: block;
+        margin-top: .3rem;
+        border-radius: 5rem;
+        transition: .5s ease;
+        background-color: var(--dark);
+    }
+    
+    .toggle__menu{
+        display: block;
+    }
+    
+    .toggle__menu.open span:first-child{
+        transform: translate(0, 5px) rotate(225deg);
+        transition: .5s ease;
+    }
+    
+    .toggle__menu.open span:nth-child(2){
+        opacity: 0;
+        transition: .5s ease;
+    }
+    
+    .toggle__menu.open span:last-child{
+        transform: translate(0, -7px) rotate(-225deg);
+        transition: .5s ease;
+    }
+    
+    .toggle__menu:hover{
+        cursor: pointer;
+    }
+
+    .banner-wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+        padding-top: 5rem;
+    }
+    
+    .banner-text{
+        width: 100%;
+        margin-top: 5rem;
+    }
+
+    .banner-text h3{
+        font-size: 8rem;
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+    
+    .banner-text p{
+        font-size: 1.7rem;
+    }
+    
+    .banner-img img{
+        width: 100%;
+    }
+
+}
+
+
 
 /* ===== ABOUT SECTION ===== */
 .about{
@@ -342,6 +455,35 @@ padding: 1rem 1.5rem;
 }
 
 
+@media screen and (max-width: 500px){
+    
+    .about-img{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+    }
+    
+    .about-img img{
+        width: 100%;
+    }
+    
+    .about-text{
+        width: 100%;
+        margin-top: 3rem;
+    }
+    
+    .about-text h3{
+        font-size:  5rem;
+    }
+    
+    .about-text p{
+        font-size:  1.7rem;
+    }
+
+}
+
+
 /* ===== DELIVERY SECTION ===== */
 .delivery{
     padding: 2rem 0;
@@ -376,6 +518,16 @@ padding: 1rem 1.5rem;
     font-size: 1.8rem;
     font-weight: 600;
     opacity: 50%;
+}
+
+@media screen and (max-width: 500px){
+
+    .delivery-wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
 }
 
 
@@ -461,6 +613,52 @@ padding: 1rem 1.5rem;
     list-style: disc;
 }
 
+@media screen and (max-width: 500px){
+
+    .services-title h3{
+        text-align: center;
+    }
+    
+    .services-title p{
+        text-align: center;
+    }
+    
+    .services-wrapper{
+        margin-top: 5rem;
+    
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    .services-card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .services-card-img img{
+        width: 100%;
+    }
+    
+    .services-card-details h3{
+        color: var(--dark);
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
+    }
+    
+    .services-card-details ul{
+        width: fit-content;
+    }
+    
+    .services-card-details ul li{
+        color: var(--dark);
+        font-size: 1.6rem;
+        list-style: disc;
+    }
+
+}
 
 
 /* ===== UNIFORM SECTION ===== */
@@ -635,6 +833,24 @@ padding: 1rem 1.5rem;
 }
 
 
+@media screen and (max-width: 500px){
+
+    .uniform-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .uniform-left img {
+        width: 100%;
+    }
+    
+    .uniform-right-text-side p{
+        width: fit-content;
+    }
+
+}
+
+
 
 /* ===== BLOG SECTION ===== */
 .blog{
@@ -712,6 +928,64 @@ padding: 1rem 1.5rem;
 }
 
 
+@media screen and (max-width: 500px){
+
+    .blog{
+        padding: 5rem 0;
+    }
+    
+    .blog-top{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        gap: 5rem;
+    }
+    
+    .blog-top-text{
+        width: fit-content;
+    }
+    
+    .blog-top-text h3{
+        text-align: center;
+    }
+    
+    .blog-top-img img{
+        width: 100%;
+    }
+    
+    .blog-bottom{
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+        margin-top: 5rem;
+    }
+    
+    .blog-cards{
+        width: 100%;
+        height: 70rem;
+    }
+    
+    .blog-cards img{
+        width: 100%;
+    }
+
+    .blog-cards-title h5{
+        font-size: 1.5rem;
+    }
+    
+    .blog-cards-title h4{
+        font-size: 3.5rem;
+    }
+    
+    .blog-cards p{
+        font-size: 1.6rem;
+    }
+
+}
+
+
+
 /* ===== CONTACT SECTION ===== */
 .contact{
     padding: 5rem 0;
@@ -721,7 +995,6 @@ padding: 1rem 1.5rem;
     display: flex;
     justify-content: space-between;
     gap: 10rem;
-
 }
 
 .contact-details{
@@ -786,6 +1059,23 @@ textarea {
     width: 15rem;
     text-align: center;
 }
+
+
+@media screen and (max-width: 500px){
+
+    .contact-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5rem;
+    }
+    
+    .contact-details{
+        width: 100%;
+    }
+    
+}
+
 
 
 
@@ -897,6 +1187,34 @@ textarea {
     width: 25rem;
 }
 
+
+@media screen and (max-width: 500px){
+    .links-top{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+    }
+    
+    .links-top img{
+        width: 35rem;
+    }
+    
+    .links-top p{
+        width: 100%;
+    }
+
+    .links-bottom{
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+}
+
+
+/* ===== FOOTER ===== */
 .footer{
     display: flex;
     justify-content: space-between;
@@ -922,4 +1240,12 @@ textarea {
     color: var(--light);
     font-size: 1.5rem;
     font-style: italic;
+}
+
+@media screen and (max-width: 500px){
+
+    .footer ul li{
+        font-size: 1.3rem;
+    }
+    
 }
